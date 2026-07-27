@@ -1,0 +1,147 @@
+.svc-page {
+  min-height: 100%;
+  background: linear-gradient(180deg, #d7e9fc 0%, #eaf3fd 45%, #eef5fd 100%);
+  padding: 16px 14px 110px;
+}
+
+.svc-search {
+  background: #fff;
+  border-radius: 16px;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #8a93a3;
+  box-shadow: 0 6px 16px rgba(50, 90, 150, 0.08);
+  margin-bottom: 16px;
+}
+
+.svc-search input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 15px;
+  color: #163d7a;
+}
+
+.svc-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #8a93a3;
+  margin-bottom: 10px;
+}
+
+.svc-cats {
+  padding-bottom: 28px;
+}
+
+.svc-cats .swiper-pagination-bullet {
+  background: #b7e5d8;
+  opacity: 1;
+}
+
+.svc-cats .swiper-pagination-bullet-active {
+  background: #00c4b4;
+  width: 16px;
+  border-radius: 8px;
+}
+
+.svc-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.svc-cat {
+  border: none;
+  background: #fff;
+  border-radius: 18px;
+  padding: 14px 8px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 6px 14px rgba(50, 90, 150, 0.08);
+  min-height: 96px;
+}
+
+.svc-cat span {
+  color: #1d5fb8;
+  font-size: 28px;
+  display: flex;
+}
+
+.svc-cat small {
+  font-size: 12px;
+  font-weight: 700;
+  color: #163d7a;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.svc-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.svc-head h2 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #163d7a;
+}
+
+.svc-head button {
+  border: none;
+  background: none;
+  color: #1d5fb8;
+  font-weight: 700;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.svc-life {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.svc-life-card {
+  background: #fff;
+  border: none;
+  border-radius: 18px;
+  padding: 14px;
+  text-align: left;
+  box-shadow: 0 6px 16px rgba(50, 90, 150, 0.08);
+  min-height: 110px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.svc-life-card span {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: #e8f2ff;
+  color: #1d5fb8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.svc-life-card strong {
+  color: #163d7a;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.svc-life-card small {
+  color: #8a93a3;
+  font-size: 12px;
+  font-weight: 600;
+}

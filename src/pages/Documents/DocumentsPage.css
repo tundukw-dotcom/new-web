@@ -1,0 +1,95 @@
+.docs-page {
+  min-height: 100%;
+  background: linear-gradient(180deg, #d7e9fc 0%, #eaf3fd 45%, #eef5fd 100%);
+  padding: 18px 14px 110px;
+}
+
+.docs-block {
+  margin-bottom: 22px;
+}
+
+.docs-block > h2,
+.docs-head h2 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #163d7a;
+  margin-bottom: 12px;
+}
+
+.docs-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.docs-head h2 {
+  margin: 0;
+}
+
+.docs-head button,
+.docs-all {
+  border: none;
+  background: none;
+  color: #1d5fb8;
+  font-weight: 700;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.docs-empty {
+  background: #fff;
+  border-radius: 22px;
+  padding: 28px 20px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(50, 90, 150, 0.08);
+}
+
+.docs-empty-ico {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 14px;
+  border-radius: 18px;
+  background: linear-gradient(145deg, #5ba0f0, #2f6fd4);
+  position: relative;
+}
+
+.docs-empty-ico.folder::after {
+  content: "";
+  position: absolute;
+  inset: 18px 16px 14px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.docs-empty-ico.wallet {
+  background: linear-gradient(145deg, #4a90e8, #2563c7);
+  border-radius: 16px;
+}
+
+.docs-empty-ico.wallet::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #f5c542;
+  top: 10px;
+  right: 12px;
+}
+
+.docs-empty strong {
+  display: block;
+  color: #163d7a;
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.docs-empty p {
+  color: #6d7c93;
+  font-size: 13px;
+  line-height: 1.4;
+}

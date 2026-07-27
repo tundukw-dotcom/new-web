@@ -1,0 +1,406 @@
+.id-card {
+    position: relative;
+    width: min(92vw, 360px);
+    margin: 0 auto;
+    user-select: none;
+}
+
+.card-bg {
+    width: 100%;
+    display: block;
+    border-radius: 24px;
+}
+
+/* ---------- Фото ---------- */
+
+.card-photo {
+    position: absolute;
+    left: 9%;
+    top: 26%;
+    width: 28%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* ---------- Общие стили ---------- */
+
+.card-label {
+    display: block;
+    font-size: 2.4%;
+    color: #5d6675;
+    margin-bottom: 2px;
+    font-weight: 500;
+}
+
+.card-value {
+    display: block;
+    font-size: 3%;
+    color: #111;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* ---------- Поля ---------- */
+
+.card-name{
+    position:absolute;
+    left:45%;
+    top:27%;
+    width:43%;
+}
+
+.card-surname{
+    position:absolute;
+    left:45%;
+    top:38%;
+    width:43%;
+}
+
+.card-patronymic{
+    position:absolute;
+    left:45%;
+    top:49%;
+    width:43%;
+}
+
+.card-sex{
+    position:absolute;
+    left:45%;
+    top:60%;
+    width:18%;
+}
+
+.card-country{
+    position:absolute;
+    left:45%;
+    top:68%;
+    width:43%;
+}
+
+.card-nationality{
+    position:absolute;
+    left:45%;
+    top:80%;
+    width:43%;
+}
+
+.card-birth{
+    position:absolute;
+    left:45%;
+    top:91%;
+    width:43%;
+}
+
+/* ---------- Подпись ---------- */
+
+.card-signature{
+    position:absolute;
+    left:10%;
+    bottom:8%;
+    width:28%;
+}
+
+/* ---------- Телефон ---------- */
+
+@media(max-width:430px){
+
+    .card-value{
+        font-size:2.8vw;
+    }
+
+    .card-label{
+        font-size:2vw;
+    }
+
+}
+/* ---------- Bottom Sheet ---------- */
+
+.bottomSheet{
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: var(--phone-w);
+    bottom: 0;
+    height: 190px;
+    background: #fff;
+    border-radius: 34px 34px 0 0;
+    box-shadow: 0 -12px 40px rgba(0,0,0,.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.dragLine{
+
+    width:60px;
+
+    height:6px;
+
+    border-radius:100px;
+
+    background:#d5d5d5;
+
+    margin-bottom:18px;
+
+}
+
+.bottomSheet h3{
+
+    color:#18386d;
+
+    font-size:22px;
+
+    margin-bottom:6px;
+
+}
+
+.bottomSheet p{
+
+    color:#6e7785;
+
+    font-size:15px;
+
+    margin-bottom:18px;
+
+}
+
+.qrWrapper{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:16px;
+
+    background:#f3f5f8;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.qrImage{
+
+    width:72px;
+
+    height:72px;
+
+}
+.bottomSheet{
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: var(--phone-w);
+    bottom: 0;
+    height: 200px;
+    background: white;
+    border-radius: 35px 35px 0 0;
+    box-shadow: 0 -10px 35px rgba(0,0,0,.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    z-index: 999;
+}
+
+.dragLine{
+
+    width:65px;
+
+    height:6px;
+
+    background:#d9d9d9;
+
+    border-radius:100px;
+
+    margin-bottom:15px;
+
+}
+
+.bottomSheet h2{
+
+    font-size:24px;
+
+    color:#16386B;
+
+    margin-bottom:20px;
+
+}
+
+.qrBox{
+
+    width:105px;
+
+    height:105px;
+
+    background:#f2f5f8;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.qrImage{
+
+    width:85px;
+
+    height:85px;
+
+}
+
+.qrInfo{
+
+    margin-top:18px;
+
+    color:#7b7b7b;
+
+    font-size:15px;
+
+}
+
+.back-card{
+    position:relative;
+    width:min(92vw,380px);
+    margin:0 auto;
+    aspect-ratio:1/1;
+    user-select:none;
+}
+
+.back-bg{
+    width:100%;
+    display:block;
+    border-radius:28px;
+}
+
+/* ---------------- Общие ---------------- */
+
+.field{
+    position:absolute;
+    display:flex;
+    flex-direction:column;
+}
+
+.label{
+    font-size:9px;
+    line-height:11px;
+    color:#4b4b4b;
+    font-weight:500;
+}
+
+.field h3{
+    margin-top:4px;
+    font-size:15px;
+    line-height:18px;
+    font-weight:700;
+    color:#111;
+}
+
+.field p{
+    margin-top:4px;
+    font-size:13px;
+    line-height:18px;
+    font-weight:600;
+    color:#111;
+}
+
+/* ------------ Орган выдачи ------------ */
+
+.authority{
+    top:25%;
+    left:10%;
+    width:45%;
+}
+
+/* ------------ Дата выдачи ------------ */
+
+.issueDate{
+    top:38%;
+    left:10%;
+    width:45%;
+}
+
+/* ------------ Персональный номер ------------ */
+
+.personalNumber{
+    top:52%;
+    left:10%;
+    width:55%;
+}
+
+/* ------------ Номер документа ------------ */
+
+.documentNumber{
+    top:66%;
+    left:10%;
+    width:45%;
+}
+
+/* ------------ Срок действия ------------ */
+
+.expiryDate{
+    top:79%;
+    left:10%;
+    width:45%;
+}
+
+/* ------------ Адрес ------------ */
+
+.address{
+    left:10%;
+    right:12%;
+    bottom:8%;
+}
+
+.address p{
+    line-height:19px;
+}
+
+/* ------------ Цифра 2 ------------ */
+
+.page-number{
+    position:absolute;
+    right:7%;
+    bottom:12%;
+    font-size:44px;
+    font-weight:800;
+    color:#111;
+}
+
+/* ------------ Телефон ------------ */
+
+@media(max-width:430px){
+
+    .label{
+        font-size:2.3vw;
+        line-height:2.8vw;
+    }
+
+    .field h3{
+        font-size:4vw;
+        line-height:4.5vw;
+    }
+
+    .field p{
+        font-size:3.2vw;
+        line-height:4.2vw;
+    }
+
+    .page-number{
+        font-size:11vw;
+    }
+
+}

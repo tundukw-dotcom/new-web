@@ -1,0 +1,87 @@
+.docs-preview h2 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #163d7a;
+  margin-bottom: 12px;
+}
+
+.docs-preview-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-items: stretch;
+}
+
+.doc-tile {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: transparent;
+  line-height: 0;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.doc-tile img {
+  width: 100%;
+  height: auto;
+  display: block;
+  user-select: none;
+  -webkit-user-drag: none;
+  filter: drop-shadow(0 6px 14px rgba(50, 90, 150, 0.16));
+}
+
+.doc-tile:active {
+  transform: scale(0.98);
+}
+
+.docs-all-link {
+  width: 100%;
+  margin-top: 12px;
+  border: none;
+  background: none;
+  color: #1d5fb8;
+  font-size: 15px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.health-tile {
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+  min-height: 96px;
+  padding: 16px 18px;
+  text-align: left;
+  color: #fff;
+  background: linear-gradient(120deg, #5aa8ea 0%, #2f78d4 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 8px 20px rgba(50, 90, 150, 0.14);
+}
+
+.health-tile span {
+  font-size: 16px;
+  font-weight: 800;
+  max-width: 55%;
+  line-height: 1.25;
+}
+
+.health-shield {
+  width: 64px;
+  height: 72px;
+  background: linear-gradient(160deg, #6bb0ef, #2f6ec4);
+  clip-path: polygon(50% 0%, 100% 12%, 100% 62%, 50% 100%, 0 62%, 0 12%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff8a3d;
+  font-size: 28px;
+  font-weight: 900;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}

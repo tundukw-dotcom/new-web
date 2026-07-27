@@ -1,0 +1,146 @@
+.doc-view {
+  position: relative;
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  background: #e1f0ff;
+  padding-bottom: clamp(100px, 18vh, 130px);
+}
+
+/* Allow card peek outside stack bounds while page still clips QR sheet */
+.doc-view .id-stack-wrap {
+  position: relative;
+  z-index: 2;
+}
+
+.doc-view-header {
+  display: grid;
+  grid-template-columns: 42px 1fr 42px;
+  align-items: center;
+  padding: max(6px, var(--safe-top)) 8px 4px;
+  min-width: 0;
+}
+
+.doc-view-header button {
+  width: 42px;
+  height: 42px;
+  border: none;
+  background: none;
+  color: #1a1a1a;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.doc-view-header h1 {
+  text-align: center;
+  font-size: clamp(15px, 4.6vw, 18px);
+  font-weight: 700;
+  color: #0f1a2a;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  min-width: 0;
+  padding: 0 4px;
+}
+
+/* --- Stack like original Tunduk video: top follows finger, bottom peeks --- */
+.id-stack-wrap {
+  padding:
+    clamp(40px, 10vh, 120px)
+    clamp(12px, 5vw, 32px)
+    clamp(12px, 3vh, 24px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: visible;
+  min-width: 0;
+}
+
+.id-stack {
+  position: relative;
+  width: 100%;
+  max-width: min(328px, 100%);
+  aspect-ratio: 1 / 1;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: none;
+  overflow: visible;
+}
+
+.id-stack:active {
+  cursor: grabbing;
+}
+
+.id-stack-card {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  will-change: transform;
+  transform-origin: center center;
+  pointer-events: none;
+}
+
+.id-stack-card.is-back .card-sheet {
+  box-shadow: none;
+  filter: brightness(0.99);
+}
+
+.id-stack-card.is-front .card-sheet {
+  box-shadow: 0 6px 20px rgba(35, 75, 130, 0.1);
+}
+
+.id-stack-card .card-sheet {
+  width: 100%;
+  height: 100%;
+}
+
+.id-stack-dots {
+  margin-top: clamp(10px, 2.2vh, 18px);
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  justify-content: center;
+}
+
+.id-stack-dots span {
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: #a8ddd6;
+  transition: width 0.22s ease, background 0.22s ease;
+}
+
+.id-stack-dots span.on {
+  width: 18px;
+  background: #1eb5a8;
+}
+
+.doc-img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 10px 28px rgba(40, 80, 140, 0.16);
+  background: #fff;
+}
+
+@media (max-height: 700px) {
+  .id-stack-wrap {
+    padding-top: clamp(28px, 6vh, 72px);
+  }
+}
+
+@media (max-width: 340px) {
+  .doc-view-header {
+    grid-template-columns: 36px 1fr 36px;
+  }
+
+  .doc-view-header button {
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
+  }
+}

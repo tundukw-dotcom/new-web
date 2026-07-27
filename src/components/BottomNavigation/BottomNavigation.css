@@ -1,0 +1,109 @@
+.bottomNav {
+  position: absolute;
+  left: max(10px, var(--page-pad-x));
+  right: max(10px, var(--page-pad-x));
+  bottom: calc(10px + var(--safe-bottom));
+  height: 64px;
+  padding: 6px 6px 8px;
+  background: #ffffff;
+  border-radius: 28px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow:
+    0 4px 16px rgba(22, 61, 122, 0.1),
+    0 12px 28px rgba(22, 61, 122, 0.12);
+  z-index: 40;
+}
+
+.navItem {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  min-width: 0;
+  color: #8b93a3;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.navIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  font-size: 24px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.navIcon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.home-icon {
+  display: block;
+  width: 22px;
+  height: 20px;
+  background: currentColor;
+  -webkit-mask: url("/icons/home.png") center / contain no-repeat;
+  mask: url("/icons/home.png") center / contain no-repeat;
+}
+
+.home-icon--filled {
+  -webkit-mask-image: url("/icons/home-filled.png");
+  mask-image: url("/icons/home-filled.png");
+}
+
+.navLabel {
+  font-size: clamp(9px, 2.8vw, 11px);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  padding: 0 2px;
+}
+
+.navItem.active {
+  color: #1a66c9;
+}
+
+.navItem.active .navLabel {
+  font-weight: 700;
+}
+
+.navItem:active {
+  opacity: 0.72;
+}
+
+@media (max-width: 340px) {
+  .bottomNav {
+    height: 58px;
+    border-radius: 22px;
+    padding: 4px;
+  }
+
+  .navIcon,
+  .navIcon svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .navLabel {
+    font-size: 9px;
+  }
+}
+
+@media (max-height: 580px) {
+  .bottomNav {
+    height: 56px;
+    bottom: calc(6px + var(--safe-bottom));
+  }
+}

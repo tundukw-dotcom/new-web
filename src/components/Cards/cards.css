@@ -1,0 +1,331 @@
+/* Cards — absolute layout calibrated to real Tunduk screenshots */
+
+.card-sheet {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 22px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: none;
+  border: none;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  container-type: inline-size;
+  container-name: doccard;
+}
+
+.card-sheet-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+.card-sheet-content {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+/* shared type — scale with card width */
+.c-label {
+  display: block;
+  font-size: 2.55cqw;
+  line-height: 1.2;
+  color: #7a868f;
+  font-weight: 400;
+  margin: 0;
+}
+
+.c-value {
+  display: block;
+  font-size: 3.85cqw;
+  line-height: 1.15;
+  color: #0a0a0a;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.c-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15cqw;
+}
+
+.c-page-num {
+  position: absolute;
+  right: 5.2%;
+  bottom: 3.6%;
+  font-size: 4.2cqw;
+  font-weight: 700;
+  color: #0a0a0a;
+  line-height: 1;
+  z-index: 2;
+}
+
+.c-page-num--dl {
+  right: 4%;
+  bottom: 3.5%;
+}
+
+/* ========== ID FRONT ========== */
+/* calibrated to real Tunduk screenshot (Alikhan) */
+.card-sheet-content--id-front .id-photo {
+  position: absolute;
+  left: 6.5%;
+  top: 14.8%;
+  width: 26%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center center;
+  background: #eef2f6;
+  display: block;
+}
+
+.card-sheet-content--id-front .id-photo--ph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.8cqw;
+  font-weight: 800;
+  color: #7a8a9a;
+  border: 1px dashed #9aacc2;
+}
+
+.card-sheet-content--id-front .id-sign {
+  position: absolute;
+  left: 6.5%;
+  top: 51.5%;
+  width: 27%;
+}
+
+.card-sheet-content--id-front .id-sign .c-label {
+  font-size: 2.35cqw;
+  line-height: 1.2;
+  color: #7a868f;
+}
+
+.card-sheet-content--id-front .id-sign-text {
+  margin-top: 0.4cqw;
+  font-family: "Segoe Script", "Brush Script MT", "Lucida Handwriting", cursive;
+  font-size: 4.45cqw;
+  font-weight: 600;
+  color: #111;
+  line-height: 1.1;
+}
+
+.card-sheet-content--id-front .id-fields {
+  position: absolute;
+  left: 39%;
+  top: 14.5%;
+  right: 4%;
+  bottom: 22%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0;
+}
+
+.card-sheet-content--id-front .id-fields .c-label {
+  font-size: 2.35cqw;
+  line-height: 1.05;
+  color: #7a868f;
+}
+
+.card-sheet-content--id-front .id-fields .c-value {
+  font-size: 3.65cqw;
+  line-height: 1.08;
+  font-weight: 700;
+  min-height: 1.08em;
+}
+
+.card-sheet-content--id-front .id-fields .c-field {
+  gap: 0.23cqw;
+}
+
+/* ========== ID BACK ========== */
+.card-sheet-content--id-back .id-back-fields {
+  position: absolute;
+  left: 7%;
+  top: 14%;
+  right: 5%;
+  bottom: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 4.36cqw;
+}
+
+.card-sheet-content--id-back .c-label {
+  font-size: 2.35cqw;
+  line-height: 1.1;
+  color: #7a868f;
+  margin-bottom: 0.15cqw;
+}
+
+.card-sheet-content--id-back .c-value {
+  font-size: 3.7cqw;
+  line-height: 1.12;
+}
+
+.card-sheet-content--id-back .c-field:last-child .c-value {
+  font-size: 3.5cqw;
+  line-height: 1.29;
+  font-weight: 700;
+}
+
+.card-sheet-content--id-back .c-field {
+  gap: 1cqw;
+}
+
+/* ========== DRIVER FRONT ========== */
+/* blue outer frame removed from bg — content on full white card */
+.card-sheet--driver {
+  background: #fff;
+}
+
+.card-sheet-content--driver-front .dl-photo {
+  position: absolute;
+  left: 3.5%;
+  top: 17%;
+  width: 23.5%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 3px;
+  background: #e8eef5;
+  display: block;
+}
+
+.card-sheet-content--driver-front .dl-photo--ph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4cqw;
+  font-weight: 800;
+  color: #7a8a9a;
+}
+
+.card-sheet-content--driver-front .dl-sign {
+  position: absolute;
+  left: 3.5%;
+  top: 50.5%;
+  width: 23.5%;
+}
+
+.card-sheet-content--driver-front .dl-sign .c-label {
+  font-size: 2.1cqw;
+  color: #6a7886;
+}
+
+.card-sheet-content--driver-front .dl-sign-text {
+  margin-top: 0.4cqw;
+  font-family: "Segoe Script", "Brush Script MT", cursive;
+  font-size: 3.4cqw;
+  color: #111;
+  line-height: 1.1;
+}
+
+.card-sheet-content--driver-front .dl-fields {
+  position: absolute;
+  left: 32%;
+  top: 16.5%;
+  right: 3.5%;
+  bottom: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-sheet-content--driver-front .dl-fields .c-label {
+  font-size: 2.15cqw;
+  color: #6a7886;
+}
+
+.card-sheet-content--driver-front .dl-fields .c-value {
+  font-size: 3.15cqw;
+}
+
+/* ========== DRIVER BACK ========== */
+.card-sheet-content--driver-back {
+  padding: 16% 4% 5% 4%;
+  box-sizing: border-box;
+}
+
+.driver-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.driver-table col.col-cat {
+  width: 26%;
+}
+
+.driver-table col.col-date {
+  width: 37%;
+}
+
+.driver-table th {
+  text-align: left;
+  font-size: 2.55cqw;
+  color: #111;
+  font-weight: 700;
+  padding: 0 0 1.6cqw;
+  line-height: 1.15;
+  vertical-align: bottom;
+}
+
+.driver-table th:nth-child(2),
+.driver-table th:nth-child(3) {
+  text-align: center;
+  font-size: 2.2cqw;
+}
+
+.driver-table td {
+  padding: 0.55cqw 0;
+  color: #111;
+  font-size: 2.7cqw;
+  font-weight: 500;
+  line-height: 1.1;
+  vertical-align: middle;
+  border: none;
+}
+
+.driver-table td:nth-child(2),
+.driver-table td:nth-child(3) {
+  text-align: center;
+  font-size: 2.65cqw;
+}
+
+.driver-cat {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.4cqw;
+}
+
+.driver-cat b {
+  font-weight: 600;
+  font-size: 2.7cqw;
+  min-width: 5cqw;
+}
+
+.driver-cat-icon {
+  width: 4.6cqw;
+  height: 2.8cqw;
+  color: #111;
+  display: inline-flex;
+}
+
+.driver-cat-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}

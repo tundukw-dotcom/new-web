@@ -1,0 +1,200 @@
+:root {
+  --td-blue: #1d5fb8;
+  --td-blue-dark: #163d7a;
+  --td-blue-mid: #1d5fb8;
+  --td-blue-soft: #d7e9fc;
+  --td-bg: #d7e9fc;
+  --td-bg-page: #eaf3fd;
+  --td-white: #ffffff;
+  --td-muted: #8a93a3;
+  --td-text: #163d7a;
+  --td-teal: #00c4b4;
+  --td-orange: #ff6b5c;
+  --td-shadow: 0 6px 16px rgba(50, 90, 150, 0.08);
+  --td-radius: 20px;
+  --td-nav-h: 90px;
+  --phone-w: 390px;
+  --phone-h: 844px;
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+  --page-pad-x: clamp(10px, 3.4vw, 16px);
+  --page-pad-y: clamp(10px, 2vh, 16px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  font-family: Inter, "Segoe UI", sans-serif;
+  background: #0b1f3a;
+  color: var(--td-text);
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+input {
+  outline: none;
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ========== App shell / phone frame ========== */
+.app-shell {
+  height: 100%;
+  height: 100dvh;
+  min-height: 100%;
+  min-height: 100dvh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding:
+    max(0px, var(--safe-top))
+    max(0px, var(--safe-right))
+    max(0px, var(--safe-bottom))
+    max(0px, var(--safe-left));
+  background:
+    radial-gradient(ellipse at 20% 0%, #1a4a8a 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 100%, #0d3a6e 0%, transparent 45%),
+    #0b1f3a;
+  overflow: hidden;
+}
+
+.app-frame {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  min-height: 0;
+  background: var(--td-bg-page);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transform: translateZ(0);
+}
+
+.app-frame > * {
+  flex: 1;
+  min-height: 0;
+  min-width: 0;
+}
+
+/* Tablet / desktop: phone chrome that always fits the viewport */
+@media (min-width: 480px) {
+  .app-shell {
+    --fit: min(
+      1,
+      (100vw - 32px) / var(--phone-w),
+      (100dvh - 48px) / var(--phone-h)
+    );
+    padding: 24px 16px;
+    align-items: center;
+  }
+
+  .app-frame {
+    width: var(--phone-w);
+    max-width: var(--phone-w);
+    height: var(--phone-h);
+    min-height: var(--phone-h);
+    border-radius: 36px;
+    transform: scale(var(--fit));
+    transform-origin: center center;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06), 0 40px 80px rgba(0, 0, 0, 0.45);
+  }
+}
+
+/* Very short desktop windows */
+@media (min-width: 480px) and (max-height: 720px) {
+  .app-shell {
+    padding: 12px;
+  }
+}
+
+/* ========== Tiny phones ========== */
+@media (max-width: 360px) {
+  :root {
+    --page-pad-x: 10px;
+    --td-nav-h: 82px;
+  }
+}
+
+@media (max-width: 340px) {
+  :root {
+    --page-pad-x: 8px;
+  }
+}
+
+/* Short mobile height (landscape / small SE) */
+@media (max-height: 640px) and (max-width: 479px) {
+  :root {
+    --td-nav-h: 76px;
+  }
+
+  .app-shell {
+    align-items: stretch;
+  }
+}
+
+/* Landscape phones: keep usable scrollable frame */
+@media (orientation: landscape) and (max-height: 480px) {
+  .app-shell {
+    overflow-y: auto;
+    align-items: flex-start;
+  }
+
+  .app-frame {
+    min-height: max(100%, 520px);
+    height: auto;
+  }
+}
+
+.page--no-nav {
+  height: 100%;
+  min-height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+
+/* Shared helpers — safe for all pages */
+.u-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.u-break {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
