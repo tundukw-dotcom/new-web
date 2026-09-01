@@ -52,6 +52,60 @@
       ]
     },
     "passport": null
+  },
+  "1009": {
+    "user": {
+      "shortName": "Шабданбеков А.",
+      "fullName": "ШАБДАНБЕКОВ АРСЕН РУСТАМОВИЧ",
+      "firstNameKg": "АРСЕН",
+      "firstNameEn": "ARSEN",
+      "firstName": "Арсен",
+      "lastNameKg": "ШАБДАНБЕКОВ",
+      "lastNameEn": "SHABDANBEKOV",
+      "lastName": "Рустамович",
+      "patronymicKg": "САРДАРОВИЧ",
+      "patronymic": "Рустамович",
+      "sex": "Э / М",
+      "citizenship": "Кыргыз Республикасы",
+      "nationality": "КЫРГЫЗ",
+      "birthDate": "22.08.2007",
+      "personalNumber": "22208200700698",
+      "photoUrl": "/photos/0002.jpg",
+      "signatureText": "А. Шабданбеков"
+    },
+    "idCard": {
+      "title": "Паспорт",
+      "authority": "СӨМ 218011",
+      "issueDate": "18.02.2025",
+      "expiryDate": "18.02.2035",
+      "documentNumber": "IK0054123",
+      "address": "Кыргызская Республика, Таласская обл., Талаский р-н, Биримдик а/а, ш. Шеркулова, улица Шеркул, дом 60"
+    },
+    "driver": {
+      "title": "Водительское удостоверение",
+      "number": "DL0932476",
+      "issueDate": "12.06.2026",
+      "expiryDate": "12.06.2036",
+      "authority": "Западный отдел ГА РТСВС. г. Талас",
+      "status": "Жарактуу / Действителен",
+      "categories": [
+        { "code": "A", "issue": "---", "expiry": "---" },
+        { "code": "A1", "issue": "---", "expiry": "---" },
+        { "code": "B", "issue": "12.06.2025", "expiry": "12.06.2035" },
+        { "code": "B1", "issue": "---", "expiry": "---" },
+        { "code": "BE", "issue": "---", "expiry": "---" },
+        { "code": "C", "issue": "---", "expiry": "---" },
+        { "code": "C1", "issue": "---", "expiry": "---" },
+        { "code": "C1E", "issue": "---", "expiry": "---" },
+        { "code": "CE", "issue": "---", "expiry": "---" },
+        { "code": "D", "issue": "---", "expiry": "---" },
+        { "code": "D1", "issue": "---", "expiry": "---" },
+        { "code": "D1E", "issue": "---", "expiry": "---" },
+        { "code": "DE", "issue": "---", "expiry": "---" },
+        { "code": "T", "issue": "---", "expiry": "---" }
+      ]
+    },
+    "passport": null
   }
 
 }
