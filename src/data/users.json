@@ -106,6 +106,233 @@
       ]
     },
     "passport": null
+  },
+  "0003": {
+    "user": {
+      "shortName": "КАДЫРБЕКОВ А.",
+      "fullName": "КАДЫРБЕКОВ АБДУКАРИМ СУУЗАРБЕКОВИЧ",
+      "firstNameKg": "АБДУКАРИМ",
+      "firstNameEn": "ABDUKARIM",
+      "firstName": "Абдукарим",
+      "lastNameKg": "КАДЫРБЕКОВ",
+      "lastNameEn": "KADYRBEKOV",
+      "lastName": "Кадыбеков",
+      "patronymicKg": "СУУЗАРБЕКОВИЧ",
+      "patronymic": "Суубарбекович",
+      "sex": "Э / М",
+      "citizenship": "Кыргыз Республикасы",
+      "nationality": "КЫРГЫЗ",
+      "birthDate": "15.11.2007",
+      "personalNumber": "21511200700457",
+      "photoUrl": "/photos/0003.jpg",
+      "signatureText": "А. Кадыбеков"
+    },
+    "idCard": {
+      "title": "Паспорт",
+      "authority": "СӨМ 217011",
+      "issueDate": "19.02.2025",
+      "expiryDate": "19.02.2035",
+      "documentNumber": "ID437030",
+      "address": "Кыргызская Республика, Таласская обл., Бакай-Атинский р-н, Биримдик а/а, с. Кызыл-Сай, улица Кочкоркул, дом 72"
+    },
+    "driver": {
+      "title": "Водительское удостоверение",
+      "number": "TEST-DL-0003",
+      "issueDate": "12.06.2026",
+      "expiryDate": "12.06.2036",
+      "authority": "Тестовый отдел ГА РТСВС",
+      "status": "Жарактуу / Действителен",
+      "categories": [
+        { "code": "A", "issue": "---", "expiry": "---" },
+        { "code": "A1", "issue": "---", "expiry": "---" },
+        { "code": "B", "issue": "12.06.2026", "expiry": "12.06.2036" },
+        { "code": "B1", "issue": "---", "expiry": "---" },
+        { "code": "BE", "issue": "---", "expiry": "---" },
+        { "code": "C", "issue": "---", "expiry": "---" },
+        { "code": "C1", "issue": "---", "expiry": "---" },
+        { "code": "C1E", "issue": "---", "expiry": "---" },
+        { "code": "CE", "issue": "---", "expiry": "---" },
+        { "code": "D", "issue": "---", "expiry": "---" },
+        { "code": "D1", "issue": "---", "expiry": "---" },
+        { "code": "D1E", "issue": "---", "expiry": "---" },
+        { "code": "DE", "issue": "---", "expiry": "---" },
+        { "code": "T", "issue": "---", "expiry": "---" }
+      ]
+    },
+    "passport": null
+  },
+  "0004": {
+    "user": {
+      "shortName": "ДАНИЭЛЬ Д.",
+      "fullName": "ДАНИЭЛЬ ДАИР УУЛУ",
+      "firstNameKg": "ДАНИЭЛЬ",
+      "firstNameEn": "DANIEL",
+      "firstName": "Даниэль",
+      "lastNameKg": "ДАИР УУЛУ",
+      "lastNameEn": "DAIR UULU",
+      "lastName": "Даир уулу",
+      "patronymicKg": "",
+      "patronymic": "",
+      "sex": "Э / М",
+      "citizenship": "Кыргыз Республикасы",
+      "nationality": "КЫРГЫЗ",
+      "birthDate": "11.02.2005",
+      "personalNumber": "2110220050217",
+      "photoUrl": "/photos/0004.jpg",
+      "signatureText": "Д. Даниэль"
+    },
+
+    "idCard": {
+      "title": "Идентификационная карта",
+      "authority": "МКК 211011",
+      "issueDate": "19.05.2021",
+      "expiryDate": "19.05.2031",
+      "documentNumber": "ID2211580",
+      "address": "Кыргызская Республика, г. Бишкек, Ленинский р-н, переулок Аларчинский (с. Селекционное), дом 29"
+    },
+
+    "driver": {
+      "title": "Водительское удостоверение",
+      "number": "DL7482915",
+      "issueDate": "17.04.2026",
+      "expiryDate": "17.04.2036",
+      "authority": "Западный отдел ГА РТСВС, г. Бишкек",
+      "status": "Жарактуу / Действителен",
+      "categories": [
+        { "code": "A", "issue": "---", "expiry": "---" },
+        { "code": "A1", "issue": "---", "expiry": "---" },
+        { "code": "B", "issue": "17.04.2026", "expiry": "17.04.2036" },
+        { "code": "B1", "issue": "---", "expiry": "---" },
+        { "code": "BE", "issue": "---", "expiry": "---" },
+        { "code": "C", "issue": "---", "expiry": "---" },
+        { "code": "C1", "issue": "---", "expiry": "---" },
+        { "code": "C1E", "issue": "---", "expiry": "---" },
+        { "code": "CE", "issue": "---", "expiry": "---" },
+        { "code": "D", "issue": "---", "expiry": "---" },
+        { "code": "D1", "issue": "---", "expiry": "---" },
+        { "code": "D1E", "issue": "---", "expiry": "---" },
+        { "code": "DE", "issue": "---", "expiry": "---" },
+        { "code": "T", "issue": "---", "expiry": "---" }
+      ]
+    },
+
+    "passport": null
+  },
+  "0005": {
+    "user": {
+      "shortName": "АЙБЕК А.",
+      "fullName": "АЙБЕК МАКУШОВ БЕКБОЛОТОВИЧ",
+      "firstNameKg": "АЙБЕК",
+      "firstNameEn": "AIBEK",
+      "firstName": "Айбек",
+      "lastNameKg": "МАКУШОВ",
+      "lastNameEn": "MAKUSHOV",
+      "lastName": "Макушов",
+      "patronymicKg": "БЕКБОЛОТОВИЧ",
+      "patronymic": "Бекболотович",
+      "sex": "Э / М",
+      "citizenship": "Кыргыз Республикасы",
+      "nationality": "КЫРГЫЗ",
+      "birthDate": "28.03.2008",
+      "personalNumber": "22803200800692",
+      "photoUrl": "/photos/0005.jpg",
+      "signatureText": "А. Макушов"
+    },
+
+    "idCard": {
+      "title": "Паспорт",
+      "authority": "217011",
+      "issueDate": "12.01.2026",
+      "expiryDate": "12.01.2036",
+      "documentNumber": "IK0043103",
+      "address": "Кыргызская Республика, Таласская обл., Бакай-Атинский р-н, Биримдик а/а, с. Кызыл-Сай, улица Кочкоркул, дом 36"
+    },
+
+    "driver": {
+      "title": "Водительское удостоверение",
+      "number": "DL5826417",
+      "issueDate": "20.06.2026",
+      "expiryDate": "20.06.2036",
+      "authority": "Тестовый отдел ГА РТСВС",
+      "status": "Жарактуу / Действителен",
+      "categories": [
+        { "code": "A", "issue": "---", "expiry": "---" },
+        { "code": "A1", "issue": "---", "expiry": "---" },
+        { "code": "B", "issue": "20.06.2026", "expiry": "20.06.2036" },
+        { "code": "B1", "issue": "---", "expiry": "---" },
+        { "code": "BE", "issue": "---", "expiry": "---" },
+        { "code": "C", "issue": "---", "expiry": "---" },
+        { "code": "C1", "issue": "---", "expiry": "---" },
+        { "code": "C1E", "issue": "---", "expiry": "---" },
+        { "code": "CE", "issue": "---", "expiry": "---" },
+        { "code": "D", "issue": "---", "expiry": "---" },
+        { "code": "D1", "issue": "---", "expiry": "---" },
+        { "code": "D1E", "issue": "---", "expiry": "---" },
+        { "code": "DE", "issue": "---", "expiry": "---" },
+        { "code": "T", "issue": "---", "expiry": "---" }
+      ]
+    },
+
+    "passport": null
+  },
+  "0006": {
+    "user": {
+      "shortName": "АЗАМАТ А.",
+      "fullName": "АЗАМАТ КУЛУБАЕВ БАКТЫБЕКОВИЧ",
+      "firstNameKg": "АЗАМАТ",
+      "firstNameEn": "AZAMAT",
+      "firstName": "Азамат",
+      "lastNameKg": "КУЛУБАЕВ",
+      "lastNameEn": "KULUBAEV",
+      "lastName": "Кулубаев",
+      "patronymicKg": "БАКТЫБЕКОВИЧ",
+      "patronymic": "Бактыбекович",
+      "sex": "Э / М",
+      "citizenship": "Кыргыз Республикасы",
+      "nationality": "КЫРГЫЗ",
+      "birthDate": "16.02.2006",
+      "personalNumber": "216020200600630",
+      "photoUrl": "/photos/0006.jpg",
+      "signatureText": "А. Кулубаев"
+    },
+    "idCard": {
+      "title": "Паспорт",
+      "authority": "МКК 217011",
+      "issueDate": "06.02.2023",
+      "expiryDate": "06.02.2033",
+      "documentNumber": "ID3204910",
+      "address": "Кыргызская Республика, Таласская обл., Бакай-Атинский р-н, Биримдик а/а, с. Кызыл-Сай, улица Кочкоркул, дом 34"
+    },
+    "driver": {
+      "title": "Водительское удостоверение",
+      "number": "DL5938174",
+      "issueDate": "22.05.2026",
+      "expiryDate": "22.05.2036",
+      "authority": "Тестовый отдел ГА РТСВС",
+      "status": "Жарактуу / Действителен",
+      "categories": [
+        { "code": "A", "issue": "---", "expiry": "---" },
+        { "code": "A1", "issue": "---", "expiry": "---" },
+        { "code": "B", "issue": "22.05.2026", "expiry": "22.05.2036" },
+        { "code": "B1", "issue": "---", "expiry": "---" },
+        { "code": "BE", "issue": "---", "expiry": "---" },
+        { "code": "C", "issue": "---", "expiry": "---" },
+        { "code": "C1", "issue": "---", "expiry": "---" },
+        { "code": "C1E", "issue": "---", "expiry": "---" },
+        { "code": "CE", "issue": "---", "expiry": "---" },
+        { "code": "D", "issue": "---", "expiry": "---" },
+        { "code": "D1", "issue": "---", "expiry": "---" },
+        { "code": "D1E", "issue": "---", "expiry": "---" },
+        { "code": "DE", "issue": "---", "expiry": "---" },
+        { "code": "T", "issue": "---", "expiry": "---" }
+      ]
+    },
+    "passport": null
   }
 
+
+
 }
+
+
+
