@@ -256,7 +256,7 @@
         { "code": "B", "issue": "22.05.2026", "expiry": "22.05.2036" },
         { "code": "B1", "issue": "---", "expiry": "---" },
         { "code": "BE", "issue": "---", "expiry": "---" },
-        { "code": "C", "issue": "---", "expiry": "---" },
+        { "code": "C", "issue": "22.05.2026", "expiry": "22.05.2036" },
         { "code": "C1", "issue": "---", "expiry": "---" },
         { "code": "C1E", "issue": "---", "expiry": "---" },
         { "code": "CE", "issue": "---", "expiry": "---" },
